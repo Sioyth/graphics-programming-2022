@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\exercises\exercise_4_solutions\exercise_4_2_to_4_7_sol\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Dev\repos\graphics-programming-2022\exercises\exercise_4_solutions\exercise_4_2_to_4_7_sol\shader_s.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Dev\repos\graphics-programming-2022\exercises\exercise_4_solutions\exercise_4_2_to_4_7_sol\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Dev\repos\graphics-programming-2022\exercises\exercise_4_solutions\exercise_4_2_to_4_7_sol\shaders\shader.frag" />
+    <None Include="D:\Dev\repos\graphics-programming-2022\exercises\exercise_4_solutions\exercise_4_2_to_4_7_sol\shaders\shader.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{D4AF0D49-FC6D-3730-B953-D4909E3D019E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{98149C14-CC0B-324C-B1A8-2691DE339AC5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

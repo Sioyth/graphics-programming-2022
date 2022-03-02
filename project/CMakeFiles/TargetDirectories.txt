@@ -45,3 +45,11 @@ D:/Dev/repos/graphics-programming-2022/project/exercises/exercise_4/exercise_4_1
 D:/Dev/repos/graphics-programming-2022/project/exercises/exercise_4/exercise_4_1/CMakeFiles/INSTALL.dir
 D:/Dev/repos/graphics-programming-2022/project/exercises/exercise_4/exercise_4_2_to_4_7/CMakeFiles/exercise_4_2_to_4_7.dir
 D:/Dev/repos/graphics-programming-2022/project/exercises/exercise_4/exercise_4_2_to_4_7/CMakeFiles/INSTALL.dir
+D:/Dev/repos/graphics-programming-2022/project/exercises/exercise_4_solutions/CMakeFiles/INSTALL.dir
+D:/Dev/repos/graphics-programming-2022/project/exercises/exercise_4_solutions/exercise_4_1_sol/CMakeFiles/exercise_4_1_sol.dir
+D:/Dev/repos/graphics-programming-2022/project/exercises/exercise_4_solutions/exercise_4_1_sol/CMakeFiles/INSTALL.dir
+D:/Dev/repos/graphics-programming-2022/project/exercises/exercise_4_solutions/exercise_4_2_to_4_7_sol/CMakeFiles/exercise_4_2_to_4_7_sol.dir
+D:/Dev/repos/graphics-programming-2022/project/exercises/exercise_4_solutions/exercise_4_2_to_4_7_sol/CMakeFiles/INSTALL.dir
+D:/Dev/repos/graphics-programming-2022/project/exercises/exercise_5/CMakeFiles/INSTALL.dir
+D:/Dev/repos/graphics-programming-2022/project/exercises/exercise_5/exercise_5_1_to_5_7/CMakeFiles/exercise_5_1_to_5_7.dir
+D:/Dev/repos/graphics-programming-2022/project/exercises/exercise_5/exercise_5_1_to_5_7/CMakeFiles/INSTALL.dir

@@ -261,9 +261,21 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{9F913DCE-60CD-3623-9C63-13CF5460EB1C}</Project>
       <Name>exercise_4_1</Name>
     </ProjectReference>
+    <ProjectReference Include="D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_4_solutions\exercise_4_1_sol\exercise_4_1_sol.vcxproj">
+      <Project>{8F5D042B-2CDD-3784-B43B-29535C0528A2}</Project>
+      <Name>exercise_4_1_sol</Name>
+    </ProjectReference>
     <ProjectReference Include="D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_4\exercise_4_2_to_4_7\exercise_4_2_to_4_7.vcxproj">
       <Project>{F1655627-797E-3E60-8EEB-EE243BA48F0D}</Project>
       <Name>exercise_4_2_to_4_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_4_solutions\exercise_4_2_to_4_7_sol\exercise_4_2_to_4_7_sol.vcxproj">
+      <Project>{E3AF1073-DEE7-327D-824E-0C517C3C23A7}</Project>
+      <Name>exercise_4_2_to_4_7_sol</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_5\exercise_5_1_to_5_7\exercise_5_1_to_5_7.vcxproj">
+      <Project>{77359961-8DA8-3DE9-A345-818AEB0361AC}</Project>
+      <Name>exercise_5_1_to_5_7</Name>
     </ProjectReference>
     <ProjectReference Include="D:\Dev\repos\graphics-programming-2022\project\common\third-party\glad\glad.vcxproj">
       <Project>{16EEC2BF-6CD8-32DF-8DD5-D1E9E518EFEA}</Project>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\exercises\exercise_5\exercise_5_1_to_5_7\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Dev\repos\graphics-programming-2022\exercises\exercise_5\exercise_5_1_to_5_7\camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Dev\repos\graphics-programming-2022\exercises\exercise_5\exercise_5_1_to_5_7\mesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Dev\repos\graphics-programming-2022\exercises\exercise_5\exercise_5_1_to_5_7\model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Dev\repos\graphics-programming-2022\exercises\exercise_5\exercise_5_1_to_5_7\objloader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Dev\repos\graphics-programming-2022\exercises\exercise_5\exercise_5_1_to_5_7\shader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Dev\repos\graphics-programming-2022\exercises\exercise_5\exercise_5_1_to_5_7\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Dev\repos\graphics-programming-2022\exercises\exercise_5\exercise_5_1_to_5_7\shaders\gouraud_shading.frag" />
+    <None Include="D:\Dev\repos\graphics-programming-2022\exercises\exercise_5\exercise_5_1_to_5_7\shaders\gouraud_shading.vert" />
+    <None Include="D:\Dev\repos\graphics-programming-2022\exercises\exercise_5\exercise_5_1_to_5_7\shaders\phong_shading.frag" />
+    <None Include="D:\Dev\repos\graphics-programming-2022\exercises\exercise_5\exercise_5_1_to_5_7\shaders\phong_shading.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{D4AF0D49-FC6D-3730-B953-D4909E3D019E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{98149C14-CC0B-324C-B1A8-2691DE339AC5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -41,6 +41,8 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("D:/Dev/repos/graphics-programming-2022/project/exercises/exercise_3/cmake_install.cmake")
   include("D:/Dev/repos/graphics-programming-2022/project/exercises/exercise_3_solutions/cmake_install.cmake")
   include("D:/Dev/repos/graphics-programming-2022/project/exercises/exercise_4/cmake_install.cmake")
+  include("D:/Dev/repos/graphics-programming-2022/project/exercises/exercise_4_solutions/cmake_install.cmake")
+  include("D:/Dev/repos/graphics-programming-2022/project/exercises/exercise_5/cmake_install.cmake")
 
 endif()
 

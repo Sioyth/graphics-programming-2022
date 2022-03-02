@@ -227,7 +227,7 @@ void drawGui(){
         ImGui::SliderFloat("specular reflectance", &config.specularReflectance, 0.0f, 1.0f);
         ImGui::SliderFloat("specular exponent", &config.specularExponent, 0.0f, 100.0f);
         ImGui::Separator();
-
+          
         ImGui::Text("Shading model: ");
         {
             if (ImGui::RadioButton("Gouraud Shading", shader == gouraud_shading)) { shader = gouraud_shading; }
@@ -241,11 +241,33 @@ void drawGui(){
     ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
 }
 
-
+ 
 void setLightUniforms()
 {
     // TODO exercise 5 - set the missing uniform variables here
-    // light uniforms
+    // light uniforms 
+    GLuint light1PosLoc = glGetUniformLocation(shader->ID, "light1Position");
+    glUniform3f(light1PosLoc, config.light1Position.x, config.light1Position.y, config.light1Position.z);  
+       
+    GLuint light1ColorLoc = glGetUniformLocation(shader->ID, "light1Color");
+    glUniform3f(light1ColorLoc, config.light1Color.r * config.light1Intensity, config.light1Color.g * config.light1Intensity, config.light1Color.b * config.light1Intensity);
+
+    GLuint diffuseReflectanceLoc = glGetUniformLocation(shader->ID, "diffuseReflectance");
+    glUniform1f(diffuseReflectanceLoc, config.diffuseReflectance);
+
+    GLuint specularReflectanceLoc = glGetUniformLocation(shader->ID, "specularReflectance");
+    glUniform1f(specularReflectanceLoc, config.specularReflectance);
+
+    GLuint specularExponentLoc = glGetUniformLocation(shader->ID, "specularExponent");
+    glUniform1f(specularExponentLoc, config.specularExponent);
+
+    GLuint light2PosLoc = glGetUniformLocation(shader->ID, "light2Position");
+    glUniform3f(light2PosLoc, config.light2Position.x, config.light2Position.y, config.light2Position.z);
+
+    GLuint light2ColorLoc = glGetUniformLocation(shader->ID, "light2Color");
+    glUniform3f(light2ColorLoc, config.light2Color.r * config.light2Intensity, config.light2Color.g * config.light2Intensity, config.light2Color.b * config.light2Intensity);
+         
+
 }
 
 
@@ -257,6 +279,14 @@ void drawObjects(){
     // TODO exercise 5 - set the missing uniform variables here
     // material uniforms
 
+    GLuint AmbientColorLoc = glGetUniformLocation(shader->ID, "ambientLightColor");
+    glUniform3f(AmbientColorLoc, config.ambientLightColor.r * config.ambientLightIntensity, config.ambientLightColor.g * config.ambientLightIntensity, config.ambientLightColor.b * config.ambientLightIntensity);
+
+    GLuint AmbientReflectanceLoc = glGetUniformLocation(shader->ID, "ambientReflectance");
+    glUniform1f(AmbientReflectanceLoc, config.ambientReflectance);
+
+    GLuint reflectionColorLoc = glGetUniformLocation(shader->ID, "reflectionColor");
+    glUniform3f(reflectionColorLoc, config.reflectionColor.r, config.reflectionColor.g, config.reflectionColor.b);
 
 
 
