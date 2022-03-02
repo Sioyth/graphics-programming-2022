@@ -47,10 +47,12 @@ SceneObject planePropeller;
 float currentTime;
 Shader* shaderProgram;
 
-float planeHeading = 0.0f;
-float tiltAngle = 0.0f;
+glm::vec2 planeHeading = glm::vec2(0.0f, 1.0f);
+float tiltAngle = 45.0f;
 float planeSpeed = 0.005f;
-glm::vec2 planePosition = glm::vec2(0.0,0.0);
+glm::vec2 planePos = glm::vec2(0.0f, 0.0f);
+float planeRotation = 0.0f;
+
 
 
 int main()
@@ -131,6 +133,8 @@ int main()
         shaderProgram->use();
         drawPlane();
 
+        planePos += planeHeading * planeSpeed;
+
         // we swap buffers because we have two color buffers:
         // one with the currently displayed image (aka front buffer) and one where we draw into (aka back buffer)
         // swapbuffers swaps the two buffers (front buffer becomes the back buffer, and vice versa)
@@ -150,16 +154,53 @@ int main()
     return 0;
 }
 
-
-void drawPlane(){
+void drawPlane() {
     // TODO 3.all create and apply your transformation matrices here
     //  you will need to transform the pose of the pieces of the plane by manipulating glm matrices and uploading a
     //  uniform mat4 transform matrix to the vertex shader
+    glm::mat4x4 transform = glm::identity<glm::mat4x4>();
+
+    unsigned int uniformLocation = glGetUniformLocation(shaderProgram->ID, "transform");
+    glUniformMatrix4fv(uniformLocation, 1, GL_FALSE, &transform[0][0]);
+    glm::vec3 rotModel = glm::vec3(0, 0, 1);
+    glm::mat4x4 modelMatrix = glm::translate(planePos.x, planePos.y, 0.0f) * glm::rotate(glm::radians(planeRotation), rotModel) * glm::scale(0.1f,0.1f, 1.0f);
 
     // body
+    transform *= modelMatrix;
+    glUniformMatrix4fv(uniformLocation, 1, GL_FALSE, &transform[0][0]);
     drawSceneObject(planeBody);
+
     // right wing
+    transform = glm::identity<glm::mat4x4>();
+    transform *= modelMatrix;
+    glUniformMatrix4fv(uniformLocation, 1, GL_FALSE, &transform[0][0]);
     drawSceneObject(planeWing);
+
+    //left wing
+    transform = glm::identity<glm::mat4x4>();
+    transform *= modelMatrix * transform * glm::scale(-1, 1, 1);
+    glUniformMatrix4fv(uniformLocation, 1, GL_FALSE, &transform[0][0]);
+    drawSceneObject(planeWing);
+
+    // right wing 
+    transform = glm::identity<glm::mat4x4>();
+    transform *= modelMatrix * glm::translate(0, -0.5f, 0) * glm::scale(0.5, 0.5, 1);
+    glUniformMatrix4fv(uniformLocation, 1, GL_FALSE, &transform[0][0]);
+    drawSceneObject(planeWing);
+
+    //left wing
+    transform = glm::identity<glm::mat4x4>();
+    transform *= modelMatrix * glm::translate(0, -0.5f, 0) * glm::scale(0.5, 0.5, 1) * glm::scale(-1, 1, 1);
+    glUniformMatrix4fv(uniformLocation, 1, GL_FALSE, &transform[0][0]);
+    drawSceneObject(planeWing);
+
+
+    transform = glm::identity<glm::mat4x4>();
+    glm::vec3 rot = glm::vec3(1, 0, 0);
+    transform *= modelMatrix * glm::translate(0, 0.5, 0) * glm::rotate(90.0f, rot) * glm::scale(0.5, 0.5, 1);
+
+    glUniformMatrix4fv(uniformLocation, 1, GL_FALSE, &transform[0][0]);
+    drawSceneObject(planePropeller);
 
 }
 
@@ -183,6 +224,12 @@ void setup(){
                                       airplane.planeWingColors,
                                       airplane.planeWingIndices);
     planeWing.vertexCount = airplane.planeWingIndices.size();
+
+    planePropeller.VAO = createVertexArray(airplane.planePropellerVertices,
+                                            airplane.planePropellerColors,
+                                            airplane.planePropellerIndices );
+
+    planePropeller.vertexCount = airplane.planePropellerIndices.size();
 
 }
 
@@ -231,6 +278,8 @@ unsigned int createElementArrayBuffer(std::vector<unsigned int> &array){
     return EBO;
 }
 
+bool aPressed = false;
+bool dPressed = false;
 // process all input: query GLFW whether relevant keys are pressed/released this frame and react accordingly
 // ---------------------------------------------------------------------------------------------------------
 void processInput(GLFWwindow *window)
@@ -240,8 +289,27 @@ void processInput(GLFWwindow *window)
     // TODO 3.4 control the plane (turn left and right) using the A and D keys
     // you will need to read A and D key press inputs
     // if GLFW_KEY_A is GLFW_PRESS, plane turn left
-    // if GLFW_KEY_D is GLFW_PRESS, plane turn right
+    if ((glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS) && aPressed == false)
+    {
+        aPressed = true;
+        planeRotation += tiltAngle;
+        planeHeading.x = cos(planeRotation);
+        planeHeading.y = sin(planeRotation);
+        planeHeading = glm::normalize(planeHeading);
+    }
+    else if ((glfwGetKey(window, GLFW_KEY_A) == GLFW_RELEASE) && aPressed == true)
+        aPressed = false;
 
+    // if GLFW_KEY_D is GLFW_PRESS, plane turn right
+    if ((glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS) && dPressed == false)
+    {
+        dPressed = true;
+        planeRotation -= tiltAngle;
+       /* planeHeading.x = 0.0f;
+        planeHeading.y = sin(planeRotation);*/
+    }
+    else if ((glfwGetKey(window, GLFW_KEY_D) == GLFW_RELEASE) && dPressed == true)
+        dPressed = false;
 }
 
 // glfw: whenever the window size changed (by OS or user resize) this callback function executes

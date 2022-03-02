@@ -2,10 +2,11 @@
 #include <GLFW/glfw3.h>
 
 #include <shader.h>
-
+#include <random>
 #include <iostream>
 #include <vector>
 #include <math.h>
+#include <string>
 
 // structure to hold the info necessary to render an object
 struct SceneObject {
@@ -31,6 +32,9 @@ std::vector<SceneObject> sceneObjects;
 std::vector<Shader> shaderPrograms;
 Shader* activeShader;
 
+std::random_device rd; // obtain a random number from hardware
+std::mt19937 gen(rd()); // seed the generator
+std::uniform_int_distribution<> distr(0, 100);
 
 int main()
 {
@@ -84,8 +88,13 @@ int main()
     // choose the right blending factors to produce additive blending
     // glBlendFunc(?, ?);
 
+    //sceneObjects.push_back(instantiateCone(1.0f, 1.0f, 1.0f, 0.0f, 0.0f));
+    
+
     // render loop
     while (!glfwWindowShouldClose(window)) {
+
+
         // background color
         glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
         // notice that now we are clearing two buffers, the color and the z-buffer
@@ -97,8 +106,13 @@ int main()
         // TODO exercise 2.3
         // Iterate through the scene objects, for each object:
         // - bind the VAO; set the uniform variables; and draw.
-        // CODE HERE
-
+        int colorPosition = glGetUniformLocation(activeShader->ID, "color");
+        for (int i = 0; i < sceneObjects.size(); i++)
+        {
+            glBindVertexArray(sceneObjects[i].VAO);
+            glUniform3f(colorPosition, sceneObjects[i].r, sceneObjects[i].g, sceneObjects[i].b);
+            glDrawElements(GL_TRIANGLES, sceneObjects[i].vertexCount, GL_UNSIGNED_INT, 0);
+        }
 
         // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
         glfwSwapBuffers(window);
@@ -120,19 +134,64 @@ SceneObject instantiateCone(float r, float g, float b, float offsetX, float offs
     SceneObject sceneObject{};
 
     // you will need to store offsetX, offsetY, r, g and b in the object.
-    // CODE HERE
+    sceneObject.r = r;
+    sceneObject.g = g;
+    sceneObject.b = r;
+    sceneObject.x = offsetX;
+    sceneObject.y = offsetY;
+
     // Build the geometry into an std::vector<float> or float array.
-    // CODE HERE
+    int sections = 20;
+    float angle = 0;
+    float angleIncrease = 360.0f / sections;
+    float radius = sqrt(2 * 2 + 2 * 2);
+
+    std::vector<float> vertices;
+    std::vector<unsigned int> indices;
+    vertices.insert(vertices.end(), { 0 + offsetX, 0 - offsetY, 1.0f});
+
+ 
+    for (int i = 1; i <= sections; i++)
+    {
+        angle += angleIncrease;
+        float x = cos(glm::radians(angle)) * radius;
+        float y = sin(glm::radians(angle)) * radius;
+
+        //std::cout << "x: " + std::to_string(x) + " y: " + std::to_string(y) << std::endl;
+
+        vertices.insert(vertices.end(), { x + offsetX, y - offsetY, -1});
+        indices.insert(indices.end(), { (unsigned int)i, 0,  i == sections ? 1 : (unsigned int)i + 1 });
+        unsigned int ui = (unsigned int)i;
+        //std::cout << std::to_string(ui) + ", 0, " +  std::to_string(i == sections ? 1 : (unsigned int)i + 1) << std::endl;
+    }
+    
+
     // Store the number of vertices in the mesh in the scene object.
-    // CODE HERE
+    sceneObject.vertexCount =  sections * 3;
     // Declare and generate a VAO and VBO (and an EBO if you decide the work with indices).
-    // CODE HERE
+    unsigned int VAO, VBO, EBO;
+
+    glGenVertexArrays(1, &VAO);
+    glGenBuffers(1, &VBO);
+    glGenBuffers(1, &EBO);
+
     // Bind and set the VAO and VBO (and optionally a EBO) in the correct order.
-    // CODE HERE
+    glBindVertexArray(VAO);
+
+    glBindBuffer(GL_ARRAY_BUFFER, VBO);
+    glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(GLfloat), &vertices[0], GL_STATIC_DRAW);
+
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, indices.size() * sizeof(GLfloat), &indices[0], GL_STATIC_DRAW);
+
     // Set the position attribute pointers in the shader.
-    // CODE HERE
+    //int posLocation = glGetAttribLocation(0, "aPos");
+    //glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, 0);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+    glEnableVertexAttribArray(0);
+
     // Store the VAO handle in the scene object.
-    // CODE HERE
+    sceneObject.VAO = VAO;
 
     // 'return' the scene object for the cone instance you just created.
     return sceneObject;
@@ -151,7 +210,19 @@ void button_input_callback(GLFWwindow* window, int button, int action, int mods)
     // - The click position should be transformed from screen coordinates to normalized device coordinates,
     //   to obtain the offset values that describe the position of the object in the screen plane.
     // - A random value in the range [0, 1] should be used for the r, g and b variables.
-    // CODE HERE
+    
+    if (button == 0 && action == GLFW_PRESS)
+    {
+        float r = distr(gen) / 100.0f;
+        float g = distr(gen) / 100.0f;
+        float b = distr(gen) / 100.0f;
+
+        double x, y;
+        glfwGetCursorPos(window, &x, &y);
+        x = (float)x / (float)SCR_WIDTH * 2.0f - 1.0f;
+        y = (float)y / (float)SCR_HEIGHT * 2.0f- 1.0f;
+        sceneObjects.push_back(instantiateCone(r, g, b, x, y));
+    }
 }
 
 // glfw: called whenever a keyboard key is pressed
@@ -163,6 +234,13 @@ void key_input_callback(GLFWwindow* window, int button, int other,int action, in
     // Key 1 sets the activeShader to &shaderPrograms[0];
     //   and so on.
     // CODE HERE
+
+    if(button ==  GLFW_KEY_1)
+        activeShader = &shaderPrograms[0];
+    if(button ==  GLFW_KEY_2)
+        activeShader = &shaderPrograms[1];
+    if(button ==  GLFW_KEY_3)
+        activeShader = &shaderPrograms[2];
 }
 
 
