@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>D:\Dev\repos\graphics-programming-2022\project\x64\Debug\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_2_solutions\Debug\exercise2_solution-voronoi.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_2\Debug\exercise2_voronoi.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_1\Debug\exercise_1_1_and_1_2.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_1_solutions\Debug\exercise_1_1_and_1_2_sol.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_1\Debug\exercise_1_3.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_1_solutions\Debug\exercise_1_3_sol.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_1\Debug\exercise_1_4.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_1_solutions\Debug\exercise_1_4_sol.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_1\Debug\exercise_1_5.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_1_solutions\Debug\exercise_1_5_sol.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_1\Debug\exercise_1_6.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_1_solutions\Debug\exercise_1_6_sol.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_1\Debug\exercise_1_7.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_1_solutions\Debug\exercise_1_7_sol.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_1\Debug\exercise_1_8.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_1_solutions\Debug\exercise_1_8_sol.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_1\Debug\exercise_1_9.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_1_solutions\Debug\exercise_1_9_sol.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_3\exercise_3\Debug\exercise_3.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_4\exercise_4_1\Debug\exercise_4_1.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Dev\repos\graphics-programming-2022\project\x64\Debug\ALL_BUILD</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

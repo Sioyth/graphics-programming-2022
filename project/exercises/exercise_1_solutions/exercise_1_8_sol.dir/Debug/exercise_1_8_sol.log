@@ -1,0 +1,5 @@
+﻿  Building Custom Rule D:/Dev/repos/graphics-programming-2022/exercises/exercise_1_solutions/CMakeLists.txt
+  main.cpp
+D:\Dev\repos\graphics-programming-2022\exercises\exercise_1_solutions\exercise_1_8_sol\main.cpp(192,26): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\Dev\repos\graphics-programming-2022\exercises\exercise_1_solutions\exercise_1_8_sol\main.cpp(227,39): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+  exercise_1_8_sol.vcxproj -> D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_1_solutions\Debug\exercise_1_8_sol.exe

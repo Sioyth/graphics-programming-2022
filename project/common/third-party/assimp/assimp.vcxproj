@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{691CBCC0-2D14-3150-9048-C763308DBDEA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>assimp</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Dev\repos\graphics-programming-2022\project\common\third-party\assimp\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">assimp.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">assimp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Dev\repos\graphics-programming-2022\project\common\third-party\assimp\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">assimp.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">assimp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Dev\repos\graphics-programming-2022\project\common\third-party\assimp\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">assimp.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">assimp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Dev\repos\graphics-programming-2022\project\common\third-party\assimp\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">assimp.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">assimp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>\\D:\Dev\repos\graphics-programming-2022\common\third-party\assimp;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\assimp;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\include;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\contrib\zlib;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;ASSIMP_BUILD_BOOST_WORKAROUND;OPENDDLPARSER_BUILD;ASSIMP_BUILD_NO_OWN_ZLIB;ASSIMP_BUILD_NO_EXPORT;ASSIMP_BUILD_NO_X_IMPORTER;ASSIMP_BUILD_NO_AMF_IMPORTER;ASSIMP_BUILD_NO_3DS_IMPORTER;ASSIMP_BUILD_NO_MD3_IMPORTER;ASSIMP_BUILD_NO_MD5_IMPORTER;ASSIMP_BUILD_NO_MDL_IMPORTER;ASSIMP_BUILD_NO_MD2_IMPORTER;ASSIMP_BUILD_NO_PLY_IMPORTER;ASSIMP_BUILD_NO_ASE_IMPORTER;ASSIMP_BUILD_NO_HMP_IMPORTER;ASSIMP_BUILD_NO_SMD_IMPORTER;ASSIMP_BUILD_NO_MDC_IMPORTER;ASSIMP_BUILD_NO_STL_IMPORTER;ASSIMP_BUILD_NO_LWO_IMPORTER;ASSIMP_BUILD_NO_DXF_IMPORTER;ASSIMP_BUILD_NO_NFF_IMPORTER;ASSIMP_BUILD_NO_RAW_IMPORTER;ASSIMP_BUILD_NO_SIB_IMPORTER;ASSIMP_BUILD_NO_OFF_IMPORTER;ASSIMP_BUILD_NO_AC_IMPORTER;ASSIMP_BUILD_NO_BVH_IMPORTER;ASSIMP_BUILD_NO_IRRMESH_IMPORTER;ASSIMP_BUILD_NO_IRR_IMPORTER;ASSIMP_BUILD_NO_Q3D_IMPORTER;ASSIMP_BUILD_NO_B3D_IMPORTER;ASSIMP_BUILD_NO_COLLADA_IMPORTER;ASSIMP_BUILD_NO_TERRAGEN_IMPORTER;ASSIMP_BUILD_NO_CSM_IMPORTER;ASSIMP_BUILD_NO_3D_IMPORTER;ASSIMP_BUILD_NO_LWS_IMPORTER;ASSIMP_BUILD_NO_OGRE_IMPORTER;ASSIMP_BUILD_NO_OPENGEX_IMPORTER;ASSIMP_BUILD_NO_MS3D_IMPORTER;ASSIMP_BUILD_NO_COB_IMPORTER;ASSIMP_BUILD_NO_BLEND_IMPORTER;ASSIMP_BUILD_NO_Q3BSP_IMPORTER;ASSIMP_BUILD_NO_NDO_IMPORTER;ASSIMP_BUILD_NO_STEP_IMPORTER;ASSIMP_BUILD_NO_IFC_IMPORTER;ASSIMP_BUILD_NO_XGL_IMPORTER;ASSIMP_BUILD_NO_ASSBIN_IMPORTER;ASSIMP_BUILD_NO_C4D_IMPORTER;ASSIMP_BUILD_NO_3MF_IMPORTER;ASSIMP_BUILD_NO_X3D_IMPORTER;ASSIMP_BUILD_NO_GLTF_IMPORTER;ASSIMP_BUILD_NO_GLTF2_IMPORTER;ASSIMP_BUILD_SINGLETHREADED;ASSIMP_BUILD_NO_M3D_IMPORTER;ASSIMP_BUILD_NO_MMD_IMPORTER;PLATFORM_WINDOWS;PLATFORM=WINDOWS;ASSIMP_BUILD_NO_FBX_IMPORTER;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;ASSIMP_BUILD_BOOST_WORKAROUND;OPENDDLPARSER_BUILD;ASSIMP_BUILD_NO_OWN_ZLIB;ASSIMP_BUILD_NO_EXPORT;ASSIMP_BUILD_NO_X_IMPORTER;ASSIMP_BUILD_NO_AMF_IMPORTER;ASSIMP_BUILD_NO_3DS_IMPORTER;ASSIMP_BUILD_NO_MD3_IMPORTER;ASSIMP_BUILD_NO_MD5_IMPORTER;ASSIMP_BUILD_NO_MDL_IMPORTER;ASSIMP_BUILD_NO_MD2_IMPORTER;ASSIMP_BUILD_NO_PLY_IMPORTER;ASSIMP_BUILD_NO_ASE_IMPORTER;ASSIMP_BUILD_NO_HMP_IMPORTER;ASSIMP_BUILD_NO_SMD_IMPORTER;ASSIMP_BUILD_NO_MDC_IMPORTER;ASSIMP_BUILD_NO_STL_IMPORTER;ASSIMP_BUILD_NO_LWO_IMPORTER;ASSIMP_BUILD_NO_DXF_IMPORTER;ASSIMP_BUILD_NO_NFF_IMPORTER;ASSIMP_BUILD_NO_RAW_IMPORTER;ASSIMP_BUILD_NO_SIB_IMPORTER;ASSIMP_BUILD_NO_OFF_IMPORTER;ASSIMP_BUILD_NO_AC_IMPORTER;ASSIMP_BUILD_NO_BVH_IMPORTER;ASSIMP_BUILD_NO_IRRMESH_IMPORTER;ASSIMP_BUILD_NO_IRR_IMPORTER;ASSIMP_BUILD_NO_Q3D_IMPORTER;ASSIMP_BUILD_NO_B3D_IMPORTER;ASSIMP_BUILD_NO_COLLADA_IMPORTER;ASSIMP_BUILD_NO_TERRAGEN_IMPORTER;ASSIMP_BUILD_NO_CSM_IMPORTER;ASSIMP_BUILD_NO_3D_IMPORTER;ASSIMP_BUILD_NO_LWS_IMPORTER;ASSIMP_BUILD_NO_OGRE_IMPORTER;ASSIMP_BUILD_NO_OPENGEX_IMPORTER;ASSIMP_BUILD_NO_MS3D_IMPORTER;ASSIMP_BUILD_NO_COB_IMPORTER;ASSIMP_BUILD_NO_BLEND_IMPORTER;ASSIMP_BUILD_NO_Q3BSP_IMPORTER;ASSIMP_BUILD_NO_NDO_IMPORTER;ASSIMP_BUILD_NO_STEP_IMPORTER;ASSIMP_BUILD_NO_IFC_IMPORTER;ASSIMP_BUILD_NO_XGL_IMPORTER;ASSIMP_BUILD_NO_ASSBIN_IMPORTER;ASSIMP_BUILD_NO_C4D_IMPORTER;ASSIMP_BUILD_NO_3MF_IMPORTER;ASSIMP_BUILD_NO_X3D_IMPORTER;ASSIMP_BUILD_NO_GLTF_IMPORTER;ASSIMP_BUILD_NO_GLTF2_IMPORTER;ASSIMP_BUILD_SINGLETHREADED;ASSIMP_BUILD_NO_M3D_IMPORTER;ASSIMP_BUILD_NO_MMD_IMPORTER;PLATFORM_WINDOWS;PLATFORM=WINDOWS;ASSIMP_BUILD_NO_FBX_IMPORTER;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>\\D:\Dev\repos\graphics-programming-2022\common\third-party\assimp;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\assimp;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\include;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\contrib\zlib;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>\\D:\Dev\repos\graphics-programming-2022\common\third-party\assimp;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\assimp;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\include;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\contrib\zlib;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>\\D:\Dev\repos\graphics-programming-2022\common\third-party\assimp;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\assimp;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\include;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\contrib\zlib;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ASSIMP_BUILD_BOOST_WORKAROUND;OPENDDLPARSER_BUILD;ASSIMP_BUILD_NO_OWN_ZLIB;ASSIMP_BUILD_NO_EXPORT;ASSIMP_BUILD_NO_X_IMPORTER;ASSIMP_BUILD_NO_AMF_IMPORTER;ASSIMP_BUILD_NO_3DS_IMPORTER;ASSIMP_BUILD_NO_MD3_IMPORTER;ASSIMP_BUILD_NO_MD5_IMPORTER;ASSIMP_BUILD_NO_MDL_IMPORTER;ASSIMP_BUILD_NO_MD2_IMPORTER;ASSIMP_BUILD_NO_PLY_IMPORTER;ASSIMP_BUILD_NO_ASE_IMPORTER;ASSIMP_BUILD_NO_HMP_IMPORTER;ASSIMP_BUILD_NO_SMD_IMPORTER;ASSIMP_BUILD_NO_MDC_IMPORTER;ASSIMP_BUILD_NO_STL_IMPORTER;ASSIMP_BUILD_NO_LWO_IMPORTER;ASSIMP_BUILD_NO_DXF_IMPORTER;ASSIMP_BUILD_NO_NFF_IMPORTER;ASSIMP_BUILD_NO_RAW_IMPORTER;ASSIMP_BUILD_NO_SIB_IMPORTER;ASSIMP_BUILD_NO_OFF_IMPORTER;ASSIMP_BUILD_NO_AC_IMPORTER;ASSIMP_BUILD_NO_BVH_IMPORTER;ASSIMP_BUILD_NO_IRRMESH_IMPORTER;ASSIMP_BUILD_NO_IRR_IMPORTER;ASSIMP_BUILD_NO_Q3D_IMPORTER;ASSIMP_BUILD_NO_B3D_IMPORTER;ASSIMP_BUILD_NO_COLLADA_IMPORTER;ASSIMP_BUILD_NO_TERRAGEN_IMPORTER;ASSIMP_BUILD_NO_CSM_IMPORTER;ASSIMP_BUILD_NO_3D_IMPORTER;ASSIMP_BUILD_NO_LWS_IMPORTER;ASSIMP_BUILD_NO_OGRE_IMPORTER;ASSIMP_BUILD_NO_OPENGEX_IMPORTER;ASSIMP_BUILD_NO_MS3D_IMPORTER;ASSIMP_BUILD_NO_COB_IMPORTER;ASSIMP_BUILD_NO_BLEND_IMPORTER;ASSIMP_BUILD_NO_Q3BSP_IMPORTER;ASSIMP_BUILD_NO_NDO_IMPORTER;ASSIMP_BUILD_NO_STEP_IMPORTER;ASSIMP_BUILD_NO_IFC_IMPORTER;ASSIMP_BUILD_NO_XGL_IMPORTER;ASSIMP_BUILD_NO_ASSBIN_IMPORTER;ASSIMP_BUILD_NO_C4D_IMPORTER;ASSIMP_BUILD_NO_3MF_IMPORTER;ASSIMP_BUILD_NO_X3D_IMPORTER;ASSIMP_BUILD_NO_GLTF_IMPORTER;ASSIMP_BUILD_NO_GLTF2_IMPORTER;ASSIMP_BUILD_SINGLETHREADED;ASSIMP_BUILD_NO_M3D_IMPORTER;ASSIMP_BUILD_NO_MMD_IMPORTER;PLATFORM_WINDOWS;PLATFORM=WINDOWS;ASSIMP_BUILD_NO_FBX_IMPORTER;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ASSIMP_BUILD_BOOST_WORKAROUND;OPENDDLPARSER_BUILD;ASSIMP_BUILD_NO_OWN_ZLIB;ASSIMP_BUILD_NO_EXPORT;ASSIMP_BUILD_NO_X_IMPORTER;ASSIMP_BUILD_NO_AMF_IMPORTER;ASSIMP_BUILD_NO_3DS_IMPORTER;ASSIMP_BUILD_NO_MD3_IMPORTER;ASSIMP_BUILD_NO_MD5_IMPORTER;ASSIMP_BUILD_NO_MDL_IMPORTER;ASSIMP_BUILD_NO_MD2_IMPORTER;ASSIMP_BUILD_NO_PLY_IMPORTER;ASSIMP_BUILD_NO_ASE_IMPORTER;ASSIMP_BUILD_NO_HMP_IMPORTER;ASSIMP_BUILD_NO_SMD_IMPORTER;ASSIMP_BUILD_NO_MDC_IMPORTER;ASSIMP_BUILD_NO_STL_IMPORTER;ASSIMP_BUILD_NO_LWO_IMPORTER;ASSIMP_BUILD_NO_DXF_IMPORTER;ASSIMP_BUILD_NO_NFF_IMPORTER;ASSIMP_BUILD_NO_RAW_IMPORTER;ASSIMP_BUILD_NO_SIB_IMPORTER;ASSIMP_BUILD_NO_OFF_IMPORTER;ASSIMP_BUILD_NO_AC_IMPORTER;ASSIMP_BUILD_NO_BVH_IMPORTER;ASSIMP_BUILD_NO_IRRMESH_IMPORTER;ASSIMP_BUILD_NO_IRR_IMPORTER;ASSIMP_BUILD_NO_Q3D_IMPORTER;ASSIMP_BUILD_NO_B3D_IMPORTER;ASSIMP_BUILD_NO_COLLADA_IMPORTER;ASSIMP_BUILD_NO_TERRAGEN_IMPORTER;ASSIMP_BUILD_NO_CSM_IMPORTER;ASSIMP_BUILD_NO_3D_IMPORTER;ASSIMP_BUILD_NO_LWS_IMPORTER;ASSIMP_BUILD_NO_OGRE_IMPORTER;ASSIMP_BUILD_NO_OPENGEX_IMPORTER;ASSIMP_BUILD_NO_MS3D_IMPORTER;ASSIMP_BUILD_NO_COB_IMPORTER;ASSIMP_BUILD_NO_BLEND_IMPORTER;ASSIMP_BUILD_NO_Q3BSP_IMPORTER;ASSIMP_BUILD_NO_NDO_IMPORTER;ASSIMP_BUILD_NO_STEP_IMPORTER;ASSIMP_BUILD_NO_IFC_IMPORTER;ASSIMP_BUILD_NO_XGL_IMPORTER;ASSIMP_BUILD_NO_ASSBIN_IMPORTER;ASSIMP_BUILD_NO_C4D_IMPORTER;ASSIMP_BUILD_NO_3MF_IMPORTER;ASSIMP_BUILD_NO_X3D_IMPORTER;ASSIMP_BUILD_NO_GLTF_IMPORTER;ASSIMP_BUILD_NO_GLTF2_IMPORTER;ASSIMP_BUILD_SINGLETHREADED;ASSIMP_BUILD_NO_M3D_IMPORTER;ASSIMP_BUILD_NO_MMD_IMPORTER;PLATFORM_WINDOWS;PLATFORM=WINDOWS;ASSIMP_BUILD_NO_FBX_IMPORTER;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>\\D:\Dev\repos\graphics-programming-2022\common\third-party\assimp;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\assimp;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\include;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\contrib\zlib;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>\\D:\Dev\repos\graphics-programming-2022\common\third-party\assimp;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\assimp;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\include;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\contrib\zlib;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>\\D:\Dev\repos\graphics-programming-2022\common\third-party\assimp;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\assimp;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\include;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\contrib\zlib;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ASSIMP_BUILD_BOOST_WORKAROUND;OPENDDLPARSER_BUILD;ASSIMP_BUILD_NO_OWN_ZLIB;ASSIMP_BUILD_NO_EXPORT;ASSIMP_BUILD_NO_X_IMPORTER;ASSIMP_BUILD_NO_AMF_IMPORTER;ASSIMP_BUILD_NO_3DS_IMPORTER;ASSIMP_BUILD_NO_MD3_IMPORTER;ASSIMP_BUILD_NO_MD5_IMPORTER;ASSIMP_BUILD_NO_MDL_IMPORTER;ASSIMP_BUILD_NO_MD2_IMPORTER;ASSIMP_BUILD_NO_PLY_IMPORTER;ASSIMP_BUILD_NO_ASE_IMPORTER;ASSIMP_BUILD_NO_HMP_IMPORTER;ASSIMP_BUILD_NO_SMD_IMPORTER;ASSIMP_BUILD_NO_MDC_IMPORTER;ASSIMP_BUILD_NO_STL_IMPORTER;ASSIMP_BUILD_NO_LWO_IMPORTER;ASSIMP_BUILD_NO_DXF_IMPORTER;ASSIMP_BUILD_NO_NFF_IMPORTER;ASSIMP_BUILD_NO_RAW_IMPORTER;ASSIMP_BUILD_NO_SIB_IMPORTER;ASSIMP_BUILD_NO_OFF_IMPORTER;ASSIMP_BUILD_NO_AC_IMPORTER;ASSIMP_BUILD_NO_BVH_IMPORTER;ASSIMP_BUILD_NO_IRRMESH_IMPORTER;ASSIMP_BUILD_NO_IRR_IMPORTER;ASSIMP_BUILD_NO_Q3D_IMPORTER;ASSIMP_BUILD_NO_B3D_IMPORTER;ASSIMP_BUILD_NO_COLLADA_IMPORTER;ASSIMP_BUILD_NO_TERRAGEN_IMPORTER;ASSIMP_BUILD_NO_CSM_IMPORTER;ASSIMP_BUILD_NO_3D_IMPORTER;ASSIMP_BUILD_NO_LWS_IMPORTER;ASSIMP_BUILD_NO_OGRE_IMPORTER;ASSIMP_BUILD_NO_OPENGEX_IMPORTER;ASSIMP_BUILD_NO_MS3D_IMPORTER;ASSIMP_BUILD_NO_COB_IMPORTER;ASSIMP_BUILD_NO_BLEND_IMPORTER;ASSIMP_BUILD_NO_Q3BSP_IMPORTER;ASSIMP_BUILD_NO_NDO_IMPORTER;ASSIMP_BUILD_NO_STEP_IMPORTER;ASSIMP_BUILD_NO_IFC_IMPORTER;ASSIMP_BUILD_NO_XGL_IMPORTER;ASSIMP_BUILD_NO_ASSBIN_IMPORTER;ASSIMP_BUILD_NO_C4D_IMPORTER;ASSIMP_BUILD_NO_3MF_IMPORTER;ASSIMP_BUILD_NO_X3D_IMPORTER;ASSIMP_BUILD_NO_GLTF_IMPORTER;ASSIMP_BUILD_NO_GLTF2_IMPORTER;ASSIMP_BUILD_SINGLETHREADED;ASSIMP_BUILD_NO_M3D_IMPORTER;ASSIMP_BUILD_NO_MMD_IMPORTER;PLATFORM_WINDOWS;PLATFORM=WINDOWS;ASSIMP_BUILD_NO_FBX_IMPORTER;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ASSIMP_BUILD_BOOST_WORKAROUND;OPENDDLPARSER_BUILD;ASSIMP_BUILD_NO_OWN_ZLIB;ASSIMP_BUILD_NO_EXPORT;ASSIMP_BUILD_NO_X_IMPORTER;ASSIMP_BUILD_NO_AMF_IMPORTER;ASSIMP_BUILD_NO_3DS_IMPORTER;ASSIMP_BUILD_NO_MD3_IMPORTER;ASSIMP_BUILD_NO_MD5_IMPORTER;ASSIMP_BUILD_NO_MDL_IMPORTER;ASSIMP_BUILD_NO_MD2_IMPORTER;ASSIMP_BUILD_NO_PLY_IMPORTER;ASSIMP_BUILD_NO_ASE_IMPORTER;ASSIMP_BUILD_NO_HMP_IMPORTER;ASSIMP_BUILD_NO_SMD_IMPORTER;ASSIMP_BUILD_NO_MDC_IMPORTER;ASSIMP_BUILD_NO_STL_IMPORTER;ASSIMP_BUILD_NO_LWO_IMPORTER;ASSIMP_BUILD_NO_DXF_IMPORTER;ASSIMP_BUILD_NO_NFF_IMPORTER;ASSIMP_BUILD_NO_RAW_IMPORTER;ASSIMP_BUILD_NO_SIB_IMPORTER;ASSIMP_BUILD_NO_OFF_IMPORTER;ASSIMP_BUILD_NO_AC_IMPORTER;ASSIMP_BUILD_NO_BVH_IMPORTER;ASSIMP_BUILD_NO_IRRMESH_IMPORTER;ASSIMP_BUILD_NO_IRR_IMPORTER;ASSIMP_BUILD_NO_Q3D_IMPORTER;ASSIMP_BUILD_NO_B3D_IMPORTER;ASSIMP_BUILD_NO_COLLADA_IMPORTER;ASSIMP_BUILD_NO_TERRAGEN_IMPORTER;ASSIMP_BUILD_NO_CSM_IMPORTER;ASSIMP_BUILD_NO_3D_IMPORTER;ASSIMP_BUILD_NO_LWS_IMPORTER;ASSIMP_BUILD_NO_OGRE_IMPORTER;ASSIMP_BUILD_NO_OPENGEX_IMPORTER;ASSIMP_BUILD_NO_MS3D_IMPORTER;ASSIMP_BUILD_NO_COB_IMPORTER;ASSIMP_BUILD_NO_BLEND_IMPORTER;ASSIMP_BUILD_NO_Q3BSP_IMPORTER;ASSIMP_BUILD_NO_NDO_IMPORTER;ASSIMP_BUILD_NO_STEP_IMPORTER;ASSIMP_BUILD_NO_IFC_IMPORTER;ASSIMP_BUILD_NO_XGL_IMPORTER;ASSIMP_BUILD_NO_ASSBIN_IMPORTER;ASSIMP_BUILD_NO_C4D_IMPORTER;ASSIMP_BUILD_NO_3MF_IMPORTER;ASSIMP_BUILD_NO_X3D_IMPORTER;ASSIMP_BUILD_NO_GLTF_IMPORTER;ASSIMP_BUILD_NO_GLTF2_IMPORTER;ASSIMP_BUILD_SINGLETHREADED;ASSIMP_BUILD_NO_M3D_IMPORTER;ASSIMP_BUILD_NO_MMD_IMPORTER;PLATFORM_WINDOWS;PLATFORM=WINDOWS;ASSIMP_BUILD_NO_FBX_IMPORTER;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>\\D:\Dev\repos\graphics-programming-2022\common\third-party\assimp;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\assimp;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\include;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\contrib\zlib;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>\\D:\Dev\repos\graphics-programming-2022\common\third-party\assimp;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\assimp;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\include;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\contrib\zlib;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>\\D:\Dev\repos\graphics-programming-2022\common\third-party\assimp;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\assimp;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\include;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\contrib\zlib;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ASSIMP_BUILD_BOOST_WORKAROUND;OPENDDLPARSER_BUILD;ASSIMP_BUILD_NO_OWN_ZLIB;ASSIMP_BUILD_NO_EXPORT;ASSIMP_BUILD_NO_X_IMPORTER;ASSIMP_BUILD_NO_AMF_IMPORTER;ASSIMP_BUILD_NO_3DS_IMPORTER;ASSIMP_BUILD_NO_MD3_IMPORTER;ASSIMP_BUILD_NO_MD5_IMPORTER;ASSIMP_BUILD_NO_MDL_IMPORTER;ASSIMP_BUILD_NO_MD2_IMPORTER;ASSIMP_BUILD_NO_PLY_IMPORTER;ASSIMP_BUILD_NO_ASE_IMPORTER;ASSIMP_BUILD_NO_HMP_IMPORTER;ASSIMP_BUILD_NO_SMD_IMPORTER;ASSIMP_BUILD_NO_MDC_IMPORTER;ASSIMP_BUILD_NO_STL_IMPORTER;ASSIMP_BUILD_NO_LWO_IMPORTER;ASSIMP_BUILD_NO_DXF_IMPORTER;ASSIMP_BUILD_NO_NFF_IMPORTER;ASSIMP_BUILD_NO_RAW_IMPORTER;ASSIMP_BUILD_NO_SIB_IMPORTER;ASSIMP_BUILD_NO_OFF_IMPORTER;ASSIMP_BUILD_NO_AC_IMPORTER;ASSIMP_BUILD_NO_BVH_IMPORTER;ASSIMP_BUILD_NO_IRRMESH_IMPORTER;ASSIMP_BUILD_NO_IRR_IMPORTER;ASSIMP_BUILD_NO_Q3D_IMPORTER;ASSIMP_BUILD_NO_B3D_IMPORTER;ASSIMP_BUILD_NO_COLLADA_IMPORTER;ASSIMP_BUILD_NO_TERRAGEN_IMPORTER;ASSIMP_BUILD_NO_CSM_IMPORTER;ASSIMP_BUILD_NO_3D_IMPORTER;ASSIMP_BUILD_NO_LWS_IMPORTER;ASSIMP_BUILD_NO_OGRE_IMPORTER;ASSIMP_BUILD_NO_OPENGEX_IMPORTER;ASSIMP_BUILD_NO_MS3D_IMPORTER;ASSIMP_BUILD_NO_COB_IMPORTER;ASSIMP_BUILD_NO_BLEND_IMPORTER;ASSIMP_BUILD_NO_Q3BSP_IMPORTER;ASSIMP_BUILD_NO_NDO_IMPORTER;ASSIMP_BUILD_NO_STEP_IMPORTER;ASSIMP_BUILD_NO_IFC_IMPORTER;ASSIMP_BUILD_NO_XGL_IMPORTER;ASSIMP_BUILD_NO_ASSBIN_IMPORTER;ASSIMP_BUILD_NO_C4D_IMPORTER;ASSIMP_BUILD_NO_3MF_IMPORTER;ASSIMP_BUILD_NO_X3D_IMPORTER;ASSIMP_BUILD_NO_GLTF_IMPORTER;ASSIMP_BUILD_NO_GLTF2_IMPORTER;ASSIMP_BUILD_SINGLETHREADED;ASSIMP_BUILD_NO_M3D_IMPORTER;ASSIMP_BUILD_NO_MMD_IMPORTER;PLATFORM_WINDOWS;PLATFORM=WINDOWS;ASSIMP_BUILD_NO_FBX_IMPORTER;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ASSIMP_BUILD_BOOST_WORKAROUND;OPENDDLPARSER_BUILD;ASSIMP_BUILD_NO_OWN_ZLIB;ASSIMP_BUILD_NO_EXPORT;ASSIMP_BUILD_NO_X_IMPORTER;ASSIMP_BUILD_NO_AMF_IMPORTER;ASSIMP_BUILD_NO_3DS_IMPORTER;ASSIMP_BUILD_NO_MD3_IMPORTER;ASSIMP_BUILD_NO_MD5_IMPORTER;ASSIMP_BUILD_NO_MDL_IMPORTER;ASSIMP_BUILD_NO_MD2_IMPORTER;ASSIMP_BUILD_NO_PLY_IMPORTER;ASSIMP_BUILD_NO_ASE_IMPORTER;ASSIMP_BUILD_NO_HMP_IMPORTER;ASSIMP_BUILD_NO_SMD_IMPORTER;ASSIMP_BUILD_NO_MDC_IMPORTER;ASSIMP_BUILD_NO_STL_IMPORTER;ASSIMP_BUILD_NO_LWO_IMPORTER;ASSIMP_BUILD_NO_DXF_IMPORTER;ASSIMP_BUILD_NO_NFF_IMPORTER;ASSIMP_BUILD_NO_RAW_IMPORTER;ASSIMP_BUILD_NO_SIB_IMPORTER;ASSIMP_BUILD_NO_OFF_IMPORTER;ASSIMP_BUILD_NO_AC_IMPORTER;ASSIMP_BUILD_NO_BVH_IMPORTER;ASSIMP_BUILD_NO_IRRMESH_IMPORTER;ASSIMP_BUILD_NO_IRR_IMPORTER;ASSIMP_BUILD_NO_Q3D_IMPORTER;ASSIMP_BUILD_NO_B3D_IMPORTER;ASSIMP_BUILD_NO_COLLADA_IMPORTER;ASSIMP_BUILD_NO_TERRAGEN_IMPORTER;ASSIMP_BUILD_NO_CSM_IMPORTER;ASSIMP_BUILD_NO_3D_IMPORTER;ASSIMP_BUILD_NO_LWS_IMPORTER;ASSIMP_BUILD_NO_OGRE_IMPORTER;ASSIMP_BUILD_NO_OPENGEX_IMPORTER;ASSIMP_BUILD_NO_MS3D_IMPORTER;ASSIMP_BUILD_NO_COB_IMPORTER;ASSIMP_BUILD_NO_BLEND_IMPORTER;ASSIMP_BUILD_NO_Q3BSP_IMPORTER;ASSIMP_BUILD_NO_NDO_IMPORTER;ASSIMP_BUILD_NO_STEP_IMPORTER;ASSIMP_BUILD_NO_IFC_IMPORTER;ASSIMP_BUILD_NO_XGL_IMPORTER;ASSIMP_BUILD_NO_ASSBIN_IMPORTER;ASSIMP_BUILD_NO_C4D_IMPORTER;ASSIMP_BUILD_NO_3MF_IMPORTER;ASSIMP_BUILD_NO_X3D_IMPORTER;ASSIMP_BUILD_NO_GLTF_IMPORTER;ASSIMP_BUILD_NO_GLTF2_IMPORTER;ASSIMP_BUILD_SINGLETHREADED;ASSIMP_BUILD_NO_M3D_IMPORTER;ASSIMP_BUILD_NO_MMD_IMPORTER;PLATFORM_WINDOWS;PLATFORM=WINDOWS;ASSIMP_BUILD_NO_FBX_IMPORTER;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>\\D:\Dev\repos\graphics-programming-2022\common\third-party\assimp;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\assimp;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\include;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\contrib\zlib;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>\\D:\Dev\repos\graphics-programming-2022\common\third-party\assimp;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\assimp;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\include;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\contrib\zlib;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Dev/repos/graphics-programming-2022/common/third-party/assimp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Dev/repos/graphics-programming-2022 -BD:/Dev/repos/graphics-programming-2022/project --check-stamp-file D:/Dev/repos/graphics-programming-2022/project/common/third-party/assimp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Dev\repos\graphics-programming-2022\project\common\third-party\assimp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Dev/repos/graphics-programming-2022/common/third-party/assimp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Dev/repos/graphics-programming-2022 -BD:/Dev/repos/graphics-programming-2022/project --check-stamp-file D:/Dev/repos/graphics-programming-2022/project/common/third-party/assimp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Dev\repos\graphics-programming-2022\project\common\third-party\assimp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Dev/repos/graphics-programming-2022/common/third-party/assimp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Dev/repos/graphics-programming-2022 -BD:/Dev/repos/graphics-programming-2022/project --check-stamp-file D:/Dev/repos/graphics-programming-2022/project/common/third-party/assimp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Dev\repos\graphics-programming-2022\project\common\third-party\assimp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Dev/repos/graphics-programming-2022/common/third-party/assimp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Dev/repos/graphics-programming-2022 -BD:/Dev/repos/graphics-programming-2022/project --check-stamp-file D:/Dev/repos/graphics-programming-2022/project/common/third-party/assimp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Dev\repos\graphics-programming-2022\project\common\third-party\assimp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\Common\Assimp.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\Common\BaseImporter.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\Common\BaseProcess.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\Common\Bitmap.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\Common\CreateAnimMesh.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\Common\DefaultIOStream.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\Common\DefaultIOSystem.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\Common\DefaultLogger.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\Common\Exporter.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\Common\Importer.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\Common\ImporterRegistry.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\Common\PostStepRegistry.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\Common\RemoveComments.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\Common\SGSpatialSort.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\Common\SceneCombiner.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\Common\ScenePreprocessor.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\Common\SkeletonMeshBuilder.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\Common\SpatialSort.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\Common\SplitByBoneCountProcess.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\Common\StandardShapes.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\Common\Subdivision.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\Common\TargetAnimation.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\Common\Version.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\Common\VertexTriangleAdjacency.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\Common\scene.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\Common\simd.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\FBX\FBXAnimation.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\FBX\FBXBinaryTokenizer.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\FBX\FBXConverter.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\FBX\FBXDeformer.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\FBX\FBXDocument.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\FBX\FBXDocumentUtil.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\FBX\FBXExportNode.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\FBX\FBXExportProperty.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\FBX\FBXExporter.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\FBX\FBXImporter.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\FBX\FBXMaterial.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\FBX\FBXMeshGeometry.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\FBX\FBXModel.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\FBX\FBXNodeAttribute.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\FBX\FBXParser.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\FBX\FBXProperties.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\FBX\FBXTokenizer.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\FBX\FBXUtil.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\Material\MaterialSystem.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\Obj\ObjExporter.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\Obj\ObjFileImporter.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\Obj\ObjFileMtlImporter.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\Obj\ObjFileParser.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\PostProcessing\ArmaturePopulate.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\PostProcessing\CalcTangentsProcess.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\PostProcessing\ComputeUVMappingProcess.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\PostProcessing\ConvertToLHProcess.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\PostProcessing\DeboneProcess.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\PostProcessing\DropFaceNormalsProcess.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\PostProcessing\EmbedTexturesProcess.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\PostProcessing\FindDegenerates.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\PostProcessing\FindInstancesProcess.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\PostProcessing\FindInvalidDataProcess.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\PostProcessing\FixNormalsStep.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\PostProcessing\GenBoundingBoxesProcess.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\PostProcessing\GenFaceNormalsProcess.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\PostProcessing\GenVertexNormalsProcess.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\PostProcessing\ImproveCacheLocality.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\PostProcessing\JoinVerticesProcess.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\PostProcessing\LimitBoneWeightsProcess.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\PostProcessing\MakeVerboseFormat.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\PostProcessing\OptimizeGraph.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\PostProcessing\OptimizeMeshes.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\PostProcessing\PretransformVertices.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\PostProcessing\ProcessHelper.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\PostProcessing\RemoveRedundantMaterials.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\PostProcessing\RemoveVCProcess.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\PostProcessing\ScaleProcess.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\PostProcessing\SortByPTypeProcess.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\PostProcessing\SplitLargeMeshes.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\PostProcessing\TextureTransform.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\PostProcessing\TriangulateProcess.cpp" />
+    <ClCompile Include="D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\code\PostProcessing\ValidateDataStructure.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Dev\repos\graphics-programming-2022\project\ZERO_CHECK.vcxproj">
+      <Project>{C403708A-67B1-3BD5-B4EC-E881EB4C71EF}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

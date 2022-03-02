@@ -1,0 +1,7 @@
+﻿  Building Custom Rule D:/Dev/repos/graphics-programming-2022/exercises/exercise_2/CMakeLists.txt
+  main.cpp
+D:\Dev\repos\graphics-programming-2022\exercises\exercise_2\main.cpp(147,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\Dev\repos\graphics-programming-2022\exercises\exercise_2\main.cpp(224,60): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+D:\Dev\repos\graphics-programming-2022\exercises\exercise_2\main.cpp(224,57): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  exercise2_voronoi.vcxproj -> D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_2\Debug\exercise2_voronoi.exe
+  Copying shaders

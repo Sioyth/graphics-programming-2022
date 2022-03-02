@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{25268794-4AC6-3D02-9B98-77E57E8B3F9E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Dev\repos\graphics-programming-2022\include;D:\Dev\repos\graphics-programming-2022\common\third-party\glad\include;D:\Dev\repos\graphics-programming-2022\common\third-party\glfw\include;D:\Dev\repos\graphics-programming-2022\common\third-party\imgui\include;D:\Dev\repos\graphics-programming-2022\common\third-party\glm;D:\Dev\repos\graphics-programming-2022\common\third-party\STBImage;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\include;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Dev\repos\graphics-programming-2022\include;D:\Dev\repos\graphics-programming-2022\common\third-party\glad\include;D:\Dev\repos\graphics-programming-2022\common\third-party\glfw\include;D:\Dev\repos\graphics-programming-2022\common\third-party\imgui\include;D:\Dev\repos\graphics-programming-2022\common\third-party\glm;D:\Dev\repos\graphics-programming-2022\common\third-party\STBImage;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\include;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Dev\repos\graphics-programming-2022\include;D:\Dev\repos\graphics-programming-2022\common\third-party\glad\include;D:\Dev\repos\graphics-programming-2022\common\third-party\glfw\include;D:\Dev\repos\graphics-programming-2022\common\third-party\imgui\include;D:\Dev\repos\graphics-programming-2022\common\third-party\glm;D:\Dev\repos\graphics-programming-2022\common\third-party\STBImage;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\include;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Dev\repos\graphics-programming-2022\include;D:\Dev\repos\graphics-programming-2022\common\third-party\glad\include;D:\Dev\repos\graphics-programming-2022\common\third-party\glfw\include;D:\Dev\repos\graphics-programming-2022\common\third-party\imgui\include;D:\Dev\repos\graphics-programming-2022\common\third-party\glm;D:\Dev\repos\graphics-programming-2022\common\third-party\STBImage;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp\include;D:\Dev\repos\graphics-programming-2022\common\third-party\assimp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Dev\repos\graphics-programming-2022\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Dev/repos/graphics-programming-2022/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Dev/repos/graphics-programming-2022 -BD:/Dev/repos/graphics-programming-2022/project --check-stamp-file D:/Dev/repos/graphics-programming-2022/project/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;D:\Dev\repos\graphics-programming-2022\project\CMakeFiles\3.23.0-rc2\CMakeCCompiler.cmake;D:\Dev\repos\graphics-programming-2022\project\CMakeFiles\3.23.0-rc2\CMakeCXXCompiler.cmake;D:\Dev\repos\graphics-programming-2022\project\CMakeFiles\3.23.0-rc2\CMakeRCCompiler.cmake;D:\Dev\repos\graphics-programming-2022\project\CMakeFiles\3.23.0-rc2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Dev\repos\graphics-programming-2022\project\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Dev/repos/graphics-programming-2022/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Dev/repos/graphics-programming-2022 -BD:/Dev/repos/graphics-programming-2022/project --check-stamp-file D:/Dev/repos/graphics-programming-2022/project/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;D:\Dev\repos\graphics-programming-2022\project\CMakeFiles\3.23.0-rc2\CMakeCCompiler.cmake;D:\Dev\repos\graphics-programming-2022\project\CMakeFiles\3.23.0-rc2\CMakeCXXCompiler.cmake;D:\Dev\repos\graphics-programming-2022\project\CMakeFiles\3.23.0-rc2\CMakeRCCompiler.cmake;D:\Dev\repos\graphics-programming-2022\project\CMakeFiles\3.23.0-rc2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Dev\repos\graphics-programming-2022\project\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Dev/repos/graphics-programming-2022/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Dev/repos/graphics-programming-2022 -BD:/Dev/repos/graphics-programming-2022/project --check-stamp-file D:/Dev/repos/graphics-programming-2022/project/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;D:\Dev\repos\graphics-programming-2022\project\CMakeFiles\3.23.0-rc2\CMakeCCompiler.cmake;D:\Dev\repos\graphics-programming-2022\project\CMakeFiles\3.23.0-rc2\CMakeCXXCompiler.cmake;D:\Dev\repos\graphics-programming-2022\project\CMakeFiles\3.23.0-rc2\CMakeRCCompiler.cmake;D:\Dev\repos\graphics-programming-2022\project\CMakeFiles\3.23.0-rc2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Dev\repos\graphics-programming-2022\project\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Dev/repos/graphics-programming-2022/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Dev/repos/graphics-programming-2022 -BD:/Dev/repos/graphics-programming-2022/project --check-stamp-file D:/Dev/repos/graphics-programming-2022/project/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;D:\Dev\repos\graphics-programming-2022\project\CMakeFiles\3.23.0-rc2\CMakeCCompiler.cmake;D:\Dev\repos\graphics-programming-2022\project\CMakeFiles\3.23.0-rc2\CMakeCXXCompiler.cmake;D:\Dev\repos\graphics-programming-2022\project\CMakeFiles\3.23.0-rc2\CMakeRCCompiler.cmake;D:\Dev\repos\graphics-programming-2022\project\CMakeFiles\3.23.0-rc2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Dev\repos\graphics-programming-2022\project\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Dev\repos\graphics-programming-2022\project\ZERO_CHECK.vcxproj">
+      <Project>{C403708A-67B1-3BD5-B4EC-E881EB4C71EF}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Dev\repos\graphics-programming-2022\project\common\third-party\assimp\assimp.vcxproj">
+      <Project>{691CBCC0-2D14-3150-9048-C763308DBDEA}</Project>
+      <Name>assimp</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_2_solutions\exercise2_solution-voronoi.vcxproj">
+      <Project>{4659528C-ABCC-3D84-B91B-33B1065B702D}</Project>
+      <Name>exercise2_solution-voronoi</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_2\exercise2_voronoi.vcxproj">
+      <Project>{7FC3B755-8E14-3867-88B5-899315831E62}</Project>
+      <Name>exercise2_voronoi</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_1\exercise_1_1_and_1_2.vcxproj">
+      <Project>{2C6BE08A-2EDE-3758-964F-3016AAD02394}</Project>
+      <Name>exercise_1_1_and_1_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_1_solutions\exercise_1_1_and_1_2_sol.vcxproj">
+      <Project>{64EFACD9-21EE-3213-A2AE-9A05101E52DF}</Project>
+      <Name>exercise_1_1_and_1_2_sol</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_1\exercise_1_3.vcxproj">
+      <Project>{0382B4C7-3D66-3FA6-A7D8-021569299692}</Project>
+      <Name>exercise_1_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_1_solutions\exercise_1_3_sol.vcxproj">
+      <Project>{8B8E34EE-FB8F-38E2-A495-49E3F0E485BC}</Project>
+      <Name>exercise_1_3_sol</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_1\exercise_1_4.vcxproj">
+      <Project>{F4DF4FED-B484-3BC3-98D1-61BBA4A08B1C}</Project>
+      <Name>exercise_1_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_1_solutions\exercise_1_4_sol.vcxproj">
+      <Project>{1D7B05DD-0AE1-3B19-88B5-6B255AACF320}</Project>
+      <Name>exercise_1_4_sol</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_1\exercise_1_5.vcxproj">
+      <Project>{96B203BF-1DBE-3D40-A85C-3750A96936E7}</Project>
+      <Name>exercise_1_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_1_solutions\exercise_1_5_sol.vcxproj">
+      <Project>{A59FD502-033E-3F6D-A310-2298ABCAD9B7}</Project>
+      <Name>exercise_1_5_sol</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_1\exercise_1_6.vcxproj">
+      <Project>{1732BB57-725A-3F5B-8F26-457A32B0CB16}</Project>
+      <Name>exercise_1_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_1_solutions\exercise_1_6_sol.vcxproj">
+      <Project>{5C4814AC-38AF-3690-850D-5929438DD300}</Project>
+      <Name>exercise_1_6_sol</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_1\exercise_1_7.vcxproj">
+      <Project>{6E716DBF-82B5-3199-91A0-116EFFCA5B2B}</Project>
+      <Name>exercise_1_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_1_solutions\exercise_1_7_sol.vcxproj">
+      <Project>{DB8C871D-D674-32FF-85F0-E4AA5CA667FF}</Project>
+      <Name>exercise_1_7_sol</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_1\exercise_1_8.vcxproj">
+      <Project>{39E57A94-DC53-310E-B641-E234C9F4C6E3}</Project>
+      <Name>exercise_1_8</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_1_solutions\exercise_1_8_sol.vcxproj">
+      <Project>{FB3E7C12-9D1C-3DB4-983B-9706FE8C0D53}</Project>
+      <Name>exercise_1_8_sol</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_1\exercise_1_9.vcxproj">
+      <Project>{B3844136-EBA9-3214-8351-AE243797B7AA}</Project>
+      <Name>exercise_1_9</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_1_solutions\exercise_1_9_sol.vcxproj">
+      <Project>{D09ECFD4-8E04-3872-B41A-ACEE1E469F1B}</Project>
+      <Name>exercise_1_9_sol</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_3\exercise_3\exercise_3.vcxproj">
+      <Project>{A73B7FE3-02D0-3BC7-B0F6-028E1FA727F5}</Project>
+      <Name>exercise_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_3_solutions\exercise_3_solutions.vcxproj">
+      <Project>{01A223DE-3003-309D-AA51-5351BDB4B782}</Project>
+      <Name>exercise_3_solutions</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_4\exercise_4_1\exercise_4_1.vcxproj">
+      <Project>{9F913DCE-60CD-3623-9C63-13CF5460EB1C}</Project>
+      <Name>exercise_4_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_4\exercise_4_2_to_4_7\exercise_4_2_to_4_7.vcxproj">
+      <Project>{F1655627-797E-3E60-8EEB-EE243BA48F0D}</Project>
+      <Name>exercise_4_2_to_4_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Dev\repos\graphics-programming-2022\project\common\third-party\glad\glad.vcxproj">
+      <Project>{16EEC2BF-6CD8-32DF-8DD5-D1E9E518EFEA}</Project>
+      <Name>glad</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Dev\repos\graphics-programming-2022\project\common\third-party\glfw\src\glfw.vcxproj">
+      <Project>{C636AA39-48F6-33E7-A455-69F5CB2FC80C}</Project>
+      <Name>glfw</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Dev\repos\graphics-programming-2022\project\common\third-party\imgui\imgui.vcxproj">
+      <Project>{7D9107CF-5717-3015-BF67-A142680DF7AE}</Project>
+      <Name>imgui</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

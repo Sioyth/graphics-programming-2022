@@ -1,0 +1,5 @@
+﻿  main.cpp
+D:\Dev\repos\graphics-programming-2022\exercises\exercise_4\exercise_4_2_to_4_7\main.cpp(146,130): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+D:\Dev\repos\graphics-programming-2022\exercises\exercise_4\exercise_4_2_to_4_7\main.cpp(151,133): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+  exercise_4_2_to_4_7.vcxproj -> D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_4\exercise_4_2_to_4_7\Debug\exercise_4_2_to_4_7.exe
+  Copying shaders

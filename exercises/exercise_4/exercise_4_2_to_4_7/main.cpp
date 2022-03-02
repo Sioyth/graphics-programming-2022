@@ -14,9 +14,9 @@ void emitParticle(float x, float y, float velocityX, float velocityY, float curr
 void framebufferSizeCallback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow *window);
 
-// const settings
+// const settings  
 const unsigned int SCR_WIDTH = 600;
-const unsigned int SCR_HEIGHT = 600;
+const unsigned int SCR_HEIGHT = 600; 
 
 // application global variables
 float lastX, lastY;                             // used to compute delta movement of the mouse
@@ -25,13 +25,13 @@ unsigned int VAO, VBO;                          // vertex array and buffer objec
 const unsigned int vertexBufferSize = 65536;    // # of particles
 
 // TODO 4.2 update the number of attributes in a particle
-const unsigned int particleSize = 2;            // particle attributes
+const unsigned int particleSize = 5;            // particle attributes
 
 const unsigned int sizeOfFloat = 4;             // bytes in a float
 unsigned int particleId = 0;                    // keep track of last particle to be updated
 Shader *shaderProgram;                          // our shader program
 
-int main()
+int main() 
 {
     // glfw: initialize and configure
     // ------------------------------
@@ -74,7 +74,8 @@ int main()
     glEnable(GL_VERTEX_PROGRAM_POINT_SIZE);
 
     // TODO 4.4 enable alpha blending (for transparency)
-
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_DST_ALPHA);   
 
 
     createVertexBufferObject();
@@ -85,7 +86,7 @@ int main()
 
     // render loop
     // -----------
-    while (!glfwWindowShouldClose(window))
+    while (!glfwWindowShouldClose(window)) 
     {
         // update current time
         auto frameStart = std::chrono::high_resolution_clock::now();
@@ -103,8 +104,8 @@ int main()
         shaderProgram->use();
 
         // TODO 4.3 set uniform variable related to current time
-
-
+        unsigned int pos = glGetUniformLocation(shaderProgram->ID, "currentTime");
+        glUniform1f(pos, currentTime);
 
         // render particles
         glBindVertexArray(VAO);
@@ -125,7 +126,7 @@ int main()
     // optional: de-allocate all resources once they've outlived their purpose:
     // ------------------------------------------------------------------------
     glDeleteVertexArrays(1, &VAO);
-    glDeleteBuffers(1, &VBO);
+    glDeleteBuffers(1, &VBO); 
 
     // glfw: terminate, clearing all previously allocated GLFW resources.
     // ------------------------------------------------------------------
@@ -140,9 +141,14 @@ void bindAttributes(){
     glVertexAttribPointer(vertexLocation, posSize, GL_FLOAT, GL_FALSE, particleSize * sizeOfFloat, 0);
 
     // TODO 4.2 set velocity and timeOfBirth shader attributes
+    GLuint vertexVelocity = glGetAttribLocation(shaderProgram->ID, "velocity");
+    glEnableVertexAttribArray(vertexVelocity);
+    glVertexAttribPointer(vertexVelocity, posSize, GL_FLOAT, GL_FALSE, particleSize * sizeOfFloat, (void*)(posSize * sizeOfFloat));
+    
 
-
-
+    GLuint vertexTimeOfBirth = glGetAttribLocation(shaderProgram->ID, "timeOfBirth");
+    glEnableVertexAttribArray(vertexTimeOfBirth);
+    glVertexAttribPointer(vertexTimeOfBirth, 1, GL_FLOAT, GL_FALSE, particleSize * sizeOfFloat, (void*)((posSize + 2) * sizeOfFloat));
 }
 
 void createVertexBufferObject(){
@@ -168,11 +174,12 @@ void emitParticle(float x, float y, float velocityX, float velocityY, float time
     float data[particleSize];
     data[0] = x;
     data[1] = y;
+    
 
     // TODO 4.2 , add velocity and timeOfBirth to the particle data
-
-
-
+    data[2] = velocityX;
+    data[3] = velocityY;
+    data[4] = timeOfBirth;
     // upload only parts of the buffer
     glBufferSubData(GL_ARRAY_BUFFER, particleId * particleSize * sizeOfFloat, particleSize * sizeOfFloat, data);
     particleId = (particleId + 1) % vertexBufferSize;

@@ -1,0 +1,43 @@
+﻿main.obj : error LNK2019: unresolved external symbol gladLoadGLLoader referenced in function main
+main.obj : error LNK2019: unresolved external symbol glfwInit referenced in function main
+main.obj : error LNK2019: unresolved external symbol glfwTerminate referenced in function main
+main.obj : error LNK2019: unresolved external symbol glfwWindowHint referenced in function main
+main.obj : error LNK2019: unresolved external symbol glfwCreateWindow referenced in function main
+main.obj : error LNK2019: unresolved external symbol glfwWindowShouldClose referenced in function main
+main.obj : error LNK2019: unresolved external symbol glfwSetWindowShouldClose referenced in function "void __cdecl processInput(struct GLFWwindow *)" (?processInput@@YAXPEAUGLFWwindow@@@Z)
+main.obj : error LNK2019: unresolved external symbol glfwSetFramebufferSizeCallback referenced in function main
+main.obj : error LNK2019: unresolved external symbol glfwPollEvents referenced in function main
+main.obj : error LNK2019: unresolved external symbol glfwGetKey referenced in function "void __cdecl processInput(struct GLFWwindow *)" (?processInput@@YAXPEAUGLFWwindow@@@Z)
+main.obj : error LNK2019: unresolved external symbol glfwMakeContextCurrent referenced in function main
+main.obj : error LNK2019: unresolved external symbol glfwSwapBuffers referenced in function main
+main.obj : error LNK2019: unresolved external symbol glfwGetProcAddress referenced in function main
+main.obj : error LNK2001: unresolved external symbol glad_debug_glClear
+main.obj : error LNK2001: unresolved external symbol glad_debug_glClearColor
+main.obj : error LNK2001: unresolved external symbol glad_debug_glEnable
+main.obj : error LNK2001: unresolved external symbol glad_debug_glDepthFunc
+main.obj : error LNK2001: unresolved external symbol glad_debug_glDepthRange
+main.obj : error LNK2001: unresolved external symbol glad_debug_glViewport
+main.obj : error LNK2001: unresolved external symbol glad_debug_glDrawElements
+main.obj : error LNK2001: unresolved external symbol glad_debug_glBindBuffer
+main.obj : error LNK2001: unresolved external symbol glad_debug_glGenBuffers
+main.obj : error LNK2001: unresolved external symbol glad_debug_glBufferData
+main.obj : error LNK2001: unresolved external symbol glad_debug_glAttachShader
+main.obj : error LNK2001: unresolved external symbol glad_debug_glCompileShader
+main.obj : error LNK2001: unresolved external symbol glad_debug_glCreateProgram
+main.obj : error LNK2001: unresolved external symbol glad_debug_glCreateShader
+main.obj : error LNK2001: unresolved external symbol glad_debug_glDeleteShader
+main.obj : error LNK2001: unresolved external symbol glad_debug_glEnableVertexAttribArray
+main.obj : error LNK2001: unresolved external symbol glad_debug_glGetAttribLocation
+main.obj : error LNK2001: unresolved external symbol glad_debug_glGetProgramiv
+main.obj : error LNK2001: unresolved external symbol glad_debug_glGetProgramInfoLog
+main.obj : error LNK2001: unresolved external symbol glad_debug_glGetShaderiv
+main.obj : error LNK2001: unresolved external symbol glad_debug_glGetShaderInfoLog
+main.obj : error LNK2001: unresolved external symbol glad_debug_glGetUniformLocation
+main.obj : error LNK2001: unresolved external symbol glad_debug_glLinkProgram
+main.obj : error LNK2001: unresolved external symbol glad_debug_glShaderSource
+main.obj : error LNK2001: unresolved external symbol glad_debug_glUseProgram
+main.obj : error LNK2001: unresolved external symbol glad_debug_glUniformMatrix4fv
+main.obj : error LNK2001: unresolved external symbol glad_debug_glVertexAttribPointer
+main.obj : error LNK2001: unresolved external symbol glad_debug_glBindVertexArray
+main.obj : error LNK2001: unresolved external symbol glad_debug_glGenVertexArrays
+D:\Dev\repos\graphics-programming-2022\project\exercises\exercise_3_solutions\Debug\exercise_3_solutions.exe : fatal error LNK1120: 42 unresolved externals

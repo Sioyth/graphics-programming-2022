@@ -1,0 +1,10 @@
+^D:\DEV\REPOS\GRAPHICS-PROGRAMMING-2022\PROJECT\CMAKEFILES\E09B8CDDD92ED282A62FD15ADB0656CD\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Dev/repos/graphics-programming-2022 -BD:/Dev/repos/graphics-programming-2022/project --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Dev/repos/graphics-programming-2022/project/ITU-graphics-programming.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
